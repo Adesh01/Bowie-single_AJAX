@@ -1,0 +1,214 @@
+/*-------------------------------------
+| root
+-------------------------------------*/
+body {
+	background-color: #eee; 
+	margin: 0px; 
+	font-family: 'Work Sans', sans-serif;
+}
+
+/*-------------------------------------
+| centering technique for rows
+-------------------------------------*/
+.inset {
+	/*outline: solid 1px red;*/
+	width: 960px;
+	margin: auto;
+}
+
+/*-------------------------------------
+| core elements
+-------------------------------------*/
+header {
+	text-align: left;
+	background-color: #fff;
+	padding: 20px 0px;
+	color:000;
+}
+header h1 {
+	font-weight:100;
+	font-size:75px;
+	letter-spacing:1px;
+}
+h3 {
+	color:#333;
+	margin-bottom:20px;
+}
+footer {
+	text-align: left;
+	background-color: #333;
+	padding: 10px;
+	font-size:12px;
+	color:#fff;
+}
+nav#mainmenu {
+	text-align: right;
+	background-color: #000;
+	color:#fff;
+	padding: 10px;
+	margin: 0px; 
+}
+section {
+	background-color: #dedede;
+	overflow:auto;
+	padding: 100px 0px;
+	min-height: 500px;
+}
+
+/*-------------------------------------
+| nav general
+-------------------------------------*/
+nav { text-align: right; margin: 5px 10px; }
+nav a {
+	display: inline-block;
+	padding: 0px 10px;
+	line-height: 20px;
+	text-decoration: none;
+	background-color: #333;
+	color: #fff;
+}
+nav a:hover { background-color: #08191C; }
+nav a.chosen { color: #08191C; background-color: #fff;}
+/*-------------------------------------
+| pinned nav
+-------------------------------------*/
+body.pinned header {margin-bottom:30px;}
+body.pinned #mainmenu {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	z-index:100;
+}
+
+/*-------------------------------------
+| AJAX
+-------------------------------------*/
+.target {
+	background-color: #fff;
+	padding:20px 30px;
+	min-height:450px;
+}
+
+/***** BOWie Gallery ******/
+#swap {
+	width:960px;
+	margin: auto;
+	font-size:0px;
+	text-align:center;
+	overflow:auto;
+}
+.small-img {
+	float:left;
+	width:320px;
+}
+.large {
+	margin-top:20px;
+	width:640px;
+	float:left;
+}
+#gallery {
+	margin:auto;
+	font-size:13px;
+}
+.mus {
+	float:left;
+	width:125px;
+	padding-bottom:7px;
+}
+.pos {
+	float:left;
+	width:135px;
+	padding-bottom:10px;
+}
+.load {
+	float:left;
+	width:120px;
+	color:#999;
+	font-weight:bold;
+	font-style:italic;
+	font-size:15px;
+	padding-top:60px;
+}
+/**** slideshow *****/
+#sliding {
+	border: solid 1px #475CC1;
+	background: #000;
+	width:1050px;
+	height:500px;
+	margin:auto;
+	margin-top:-40px;
+	margin-bottom:-40px;
+	position:relative;
+	overflow: hidden;
+}
+#sliding img {
+	position:absolute;
+	left:1050px;
+	top:0px;
+}
+#sliding img.first {left: 0px;}
+
+
+/**** lightbox messages *****/
+#messages .set img{
+	border:1px solid #000;
+	display: inline-block;
+	float:left;
+	width:318px;
+	height:318px;
+	
+}
+#messages .set .desc {
+	display:none;
+}
+#lb {
+	background-color: #000;
+	background-color: rgba(0,0,0,.7);
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+	bottom: 0px; 
+	display:none;
+}
+#lb .light {
+	background-color: #fff;
+	position: fixed;
+	left: 0px; right: 0px;  bottom: 0px; top: 0px; 
+	margin: auto;
+	padding: 20px;
+	text-align:left;
+	width: 350px;
+	height: 150px;
+	border-radius: 5px;
+}
+#lb .light .close {
+	position: absolute;
+	right: 3px; 
+	top: 3px;
+	background-color: red;
+	border-radius: 2px;
+	color:#fff;
+	width: 10px;
+	line-height: 10px;
+	text-align: center;
+	font-size: 11px;
+	cursor: pointer;
+	padding:1px;
+}
+#lb .light h3 {
+	font-size: 20px;
+	margin:0px 0px;
+	margin-top:10px;
+}
+#lb .light .messg {
+	position: absolute;
+	left: 20px; 
+	bottom: 30px; 
+	right: 20px; 
+	background-color: #fff;
+	padding: 14px;
+	border-radius:5px;
+	font-size: 16px;
+}
